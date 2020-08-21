@@ -1,0 +1,32 @@
+{
+  "name": "projet-2cs-backend",
+  "version": "1.0.0",
+  "description": "code backend d'un projet d'etude d'un systeme d'aide a la maintenance preventive utilisant nodeJs et postgresql ",
+  "main": "index.js",
+  "scripts": {
+    "dev": "say 'Executing under development environment.' && nodemon index.js",
+    "prod": "say 'Executing normally.' && start index.js",
+    "test": "mocha ./test test/knowledge_files"
+  },
+  "keywords": [
+    "postgresql",
+    "express",
+    "backend",
+    "nodejs"
+  ],
+  "author": "tech-ant",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^7.2.0",
+    "nodemon": "^2.0.3",
+    "sinon": "^9.0.2",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.25.3",
+    "pg": "^8.1.0"
+  }
+}
