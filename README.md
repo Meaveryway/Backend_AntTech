@@ -142,19 +142,20 @@ Définit la composition de base d'un véhicule du catalogue en terme de pièces 
 `PS: la présence du [?,?,?,?] indique que l'attribut appartient à une plage de valeur bien limitée, non citées dans cette documentation car elle appartient à priori au domaine métier.`
 
 ------
-#Request URLs & API Documentation
+
+# Request URLs & API Documentation
 You can find the whole documentation of the Techant API in this link:
 [Techant API documentation](https://documenter.getpostman.com/view/8372357/T17J9Sxh)
 
-#Managing URLs (URLParser)
+# Managing URLs (URLParser)
 All HTTP URL and Body parameters are being retrieved centrally through the utility function URLParser in [./utilities/urlAttributeExtractor.js](./utilities/urlAttributeExtractor.js "Techant DB Scheme")
 
 ------
-#Tests
+# Tests
 Unit tests were written for the server basic startup protocols as well as for the whole suite of HTTP requests managed by this server (+100 unit tests).
 - Find tests under [tests folder](./test)
 - Run tests (under the testing environment) simply with `npm run test`
-###List of implemented tests:
+### List of implemented tests:
 ####On Server
 - ✓ starts successfully on port 3030
 - ✓ accesses local database with URL postgres://centraluser:chalal@localhost:5432/techant (54ms)
@@ -309,7 +310,7 @@ Unit tests were written for the server basic startup protocols as well as for th
 
 
 ------
-#Used Node modules
+# Used Node modules
 1. `express`: a lightweight framework for developing web apps and servers in Node.js. 
 2. `nodemon`: a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected. En gros ça nous évite juste de devoir rebooter le serveur à chaque changement, quite handy.
 3. `body-parser`: parses incoming request bodies in a middleware before handlers can references params or attributes from them. Can parse JSON loaded requests too.
