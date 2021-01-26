@@ -156,10 +156,10 @@ Unit tests were written for the server basic startup protocols as well as for th
 - Find tests under [tests folder](./test)
 - Run tests (under the testing environment) simply with `npm run test`
 ### List of implemented tests:
-####On Server
+#### On Server
 - ✓ starts successfully on port 3030
 - ✓ accesses local database with URL postgres://centraluser:chalal@localhost:5432/techant (54ms)
-####On Catalogues of components
+#### On Catalogues of components
 - ✓ it should GET a list of all catalogue components or nocontent if DB is empty (57ms)
 - ✓ it should POST a catalogue component and return its ID (164ms)
 - ✓ it should GET a catalogue component based on its ID
@@ -169,14 +169,14 @@ Unit tests were written for the server basic startup protocols as well as for th
 - ✓ it should PATCH a catalogue component's handbook threshold based on its ID
 - ✓ it should PATCH a catalogue component's rex threshold based on its ID
 - ✓ it should DELETE an existing catalogue component based on its ID
-####On Catalogues of vehicles
+#### On Catalogues of vehicles
 - ✓ it should GET a list of all catalogue vehicles or nocontent if DB is empty
 - ✓ it should POST a catalogue vehicle and return its ID
 - ✓ it should GET a catalogue vehicle based on its ID
 - ✓ it should NOT GET a catalogue vehicle with an erroneous ID
 - ✓ it should UPDATE a catalogue vehicle based on its ID
 - ✓ it should DELETE an existing catalogue vehicle based on its ID
-####On Components
+#### On Components
 - ✓ it should GET a list of all components or nocontent if DB is empty
 - ✓ it should POST a component and return its ID
 - ✓ it should GET a component based on its ID
@@ -184,14 +184,14 @@ Unit tests were written for the server basic startup protocols as well as for th
 - ✓ it should UPDATE a component based on its ID
 - ✓ it should PATCH a component's odometer based on its ID
 - ✓ it should DELETE an existing component based on its ID
-####On Controls
+#### On Controls
 - ✓ it should GET a list of all controls or nocontent if DB is empty
 - ✓ it should POST a control and return its ID
 - ✓ it should GET a control based on its ID
 - ✓ it should NOT GET a control with an erroneous ID
 - ✓ it should UPDATE a control based on its ID
 - ✓ it should DELETE an existing control based on its ID
-####On Default Vehicles' Components
+#### On Default Vehicles' Components
 - ✓ it should GET a list of all default components or nocontent if DB is empty
 - ✓ it should POST a default component and return its ID
 - ✓ it should GET a default component based on a vehicle ID
@@ -199,7 +199,7 @@ Unit tests were written for the server basic startup protocols as well as for th
 - ✓ it should DELETE an existing default component based on its ID
 - ✓ it should DELETE an existing default component based on a vehicle ID
 - ✓ it should DELETE an existing default component based on a component ID
-####On Drivers
+#### On Drivers
 - ✓ it should GET a list of all drivers or nocontent if DB is empty
 - ✓ it should POST a driver and return its ID
 - ✓ it should GET a driver based on its ID
@@ -213,28 +213,28 @@ Unit tests were written for the server basic startup protocols as well as for th
 - ✓ it should NOT GET an infraction with an erroneous ID
 - ✓ it should UPDATE an infraction based on its ID
 - ✓ it should DELETE an existing infraction based on its ID
-####On Maintenance units
+#### On Maintenance units
 - ✓ it should GET a list of all maintenance units or nocontent if DB is empty
 - ✓ it should POST a maintenance unit and return its ID
 - ✓ it should GET a maintenance unit based on its ID
 - ✓ it should NOT GET a maintenance unit with an erroneous ID
 - ✓ it should UPDATE a maintenance unit based on its ID
 - ✓ it should DELETE an existing maintenance unit based on its ID
-####On Manufacturers
+#### On Manufacturers
 - ✓ it should GET a list of all manufacturers or nocontent if DB is empty
 - ✓ it should POST a manufacturer and return its ID
 - ✓ it should GET a manufacturer based on its ID
 - ✓ it should NOT GET a manufacturer with an erroneous ID
 - ✓ it should UPDATE a manufacturer based on its ID (48ms)
 - ✓ it should DELETE an existing manufacturer based on its ID
-####On Operational units
+#### On Operational units
 - ✓ it should GET a list of all operational units or nocontent if DB is empty
 - ✓ it should POST an operational unit and return its ID
 - ✓ it should GET an operational unit based on its ID
 - ✓ it should NOT GET an operational unit with an erroneous ID
 - ✓ it should UPDATE an operational unit based on its ID
 - ✓ it should DELETE an existing operational unit based on its ID
-####On Vehicles
+#### On Vehicles
 - ✓ it should GET a list of all vehicles or nocontent if DB is empty
 - ✓ it should POST a vehicle and return its ID
 - ✓ it should GET a vehicle based on its ID
@@ -243,7 +243,7 @@ Unit tests were written for the server basic startup protocols as well as for th
 - ✓ it should PATCH a vehicle's odometer value based on its ID
 - ✓ it should PATCH a vehicle's status based on its ID (48ms)
 - ✓ it should DELETE an existing vehicle based on its ID
-####On Drivers' Returns of Experience
+#### On Drivers' Returns of Experience
 - ✓ it should GET a list of all driver REXs or nocontent if DB is empty
 - ✓ it should POST a driver REX and return its ID
 - ✓ it should GET a driver REX based on its ID
@@ -251,42 +251,42 @@ Unit tests were written for the server basic startup protocols as well as for th
 - ✓ it should UPDATE a driver REX based on its ID
 - ✓ it should PATCH a driver REX's status based on its ID
 - ✓ it should DELETE an existing driver REX based on its ID
-####On Handbooks
+#### On Handbooks
 - ✓ it should GET a list of all handbooks or nocontent if DB is empty
 - ✓ it should POST a handbook and return its ID
 - ✓ it should GET a handbook based on its ID
 - ✓ it should NOT GET a handbook with an erroneous ID
 - ✓ it should UPDATE a handbook based on its ID
 - ✓ it should DELETE an existing handbook based on its ID
-####On Driving instructions
+#### On Driving instructions
 - ✓ it should GET a list of all driving instructions or nocontent if DB is empty
 - ✓ it should POST a driving instruction and return its ID
 - ✓ it should GET a driving instruction based on its ID
 - ✓ it should NOT GET a driving instruction with an erroneous ID
 - ✓ it should UPDATE a driving instruction based on its ID (236ms)
 - ✓ it should DELETE an existing driving instruction based on its ID
-####On Indicator instructions
+#### On Indicator instructions
 - ✓ it should GET a list of all indicator instructions or nocontent if DB is empty
 - ✓ it should POST a indicator instruction and return its ID
 - ✓ it should GET a indicator instruction based on its ID
 - ✓ it should NOT GET an indicator instruction  with an erroneous ID
 - ✓ it should UPDATE a indicator instruction based on its ID (46ms)
 - ✓ it should DELETE an existing indicator instruction based on its ID
-####On Interchange instructions
+#### On Interchange instructions
 - ✓ it should GET a list of all interchange instructions or nocontent if DB is empty
 - ✓ it should POST a interchange instruction and return its ID
 - ✓ it should GET a interchange instruction based on its ID
 - ✓ it should NOT GET an interchange instruction with an erroneous ID
 - ✓ it should UPDATE a interchange instruction based on its ID
 - ✓ it should DELETE an existing interchange instruction based on its ID
-####On Maintenance sheets
+#### On Maintenance sheets
 - ✓ it should GET a list of all maintenance sheets or nocontent if DB is empty
 - ✓ it should POST a maintenance sheet and return its ID
 - ✓ it should GET a maintenance sheet based on its ID
 - ✓ it should NOT GET a maintenance sheet with an erroneous ID
 - ✓ it should UPDATE a maintenance sheet based on its ID
 - ✓ it should DELETE an existing maintenance sheet based on its ID
-####On Mechanic Returns of Experience
+#### On Mechanic Returns of Experience
 - ✓ it should GET a list of all mechanic REXs or nocontent if DB is empty
 - ✓ it should POST a mechanic REX and return its ID
 - ✓ it should GET a mechanic REX based on its ID
@@ -294,14 +294,14 @@ Unit tests were written for the server basic startup protocols as well as for th
 - ✓ it should UPDATE a mechanic REX based on its ID
 - ✓ it should PATCH a mechanic REX's status based on its ID
 - ✓ it should DELETE an existing mechanic REX based on its ID
-####On Use Sheets
+#### On Use Sheets
 - ✓ it should GET a list of all use sheets or nocontent if DB is empty
 - ✓ it should POST a use sheet and return its ID
 - ✓ it should GET a use sheet based on its ID
 - ✓ it should NOT GET a use sheet with an erroneous ID
 - ✓ it should UPDATE a use sheet based on its ID
 - ✓ it should DELETE an existing use sheet based on its ID
-####On Use Speeds
+#### On Use Speeds
 - ✓ it should GET a list of all speed sheets or nocontent if DB is empty
 - ✓ it should POST a speed sheet and return its ID
 - ✓ it should GET a speed sheet based on the ID of a use sheet
